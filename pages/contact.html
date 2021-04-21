@@ -1,100 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" type="text/css" href="../css/index.css" media="screen"/>
-    <title>Contact me</title>
-</head>
-<body>
-    <h1> CONNECT WITH <mark> US </mark></h1>
-            <div class="contact-form">
-                    <div class="contact-left">
-                        <h3> leave requests below</h3>
-                            <form id="contact-form">
-                                <div class="input-row">
-                                    <div class="input-element">
-                                    <label for="first_name">First name:</label>
-                                    <input type="text" id="first_name" name="first_name">
-                                    </div>
-                                </div>
+    <head>
+        <title>contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
 
-                                <div class="input-row">
-                                    <div class="input-element">
-                                     <label for="last_name">Last name:</label>
-                                     <input type="text" id="last_name" name="last_name">
-                                    </div>
-                                </div>
-
-                                <div class="input-row">
-                                     <div class="input-element">
-                                     <label for="email">Email Address:</label>
-                                     <input type="text" id="email" name="email">
-                                    </div>
-                                </div>
-
-                                <div class="input-row">
-                                    <div class="input-element">
-                                     <label for="gender"> Gender:</label>
-                                       <input type="radio" id="male" name="gender" value="male" checked>
-                                       <label for ="male">Male</label> 
-                                       <input type="radio" id="female" name="gender" value="female">
-                                       <label for="female">Female</label>
-                                       <input type="radio" id="other" name="gender" value="other">
-                                       <label for="other">Other</label>
-                                   </div>
-                                   </div>
-
-                                    <div class="input-row">
-                                        <div class="input-element">
-                                        <label for="phone">Phone number:</label>
-                                        <input type="text" id="phone" name="phone">
-                                        </div>
-                                    </div>
-
-                                    <div class="input-row">
-                                        <div class="input-element">
-                                            <label for="subject">Subject:</label>
-                                            <input type="text" id="subject" name="subject">
-                                        </div>  
-                                    </div>
-
-                                    <div class="input-row">
-                                        <div class="input-element">
-                                            <label for="language">Select Programming language</label>
-                                            <select id="language" name="language">
-                                                <option value="mysql">MYSQL</option>
-                                                <option value="python">Python</option>
-                                                <option value="php">Php</option> 
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <p>Please leave a comment below here: </p>
-                                        <textarea rows="5" name="message"> </textarea>
-                                        <button type="submit" value="summit">Submit</button>
-                                    </div>
-                                </div> 
-                            </form>
-                            </div>
-                            <div class="contact-right">
-                                <p>Reach us on</p>
-                            </div>
-
-                        </div>
-                
-</body>
-<p>My motivation of the day: <q>When you're tempted to give up, remember  why you started</q></p>
-        <address> 
-            Written by Allen Magezi<br>
-            Visit her in: kampala<br>
-            @the hub<br>
-            P.O.Box 992, kampala<br>
-            Uganda
-        </address>
-        <footer> 
-            <p> &copy;All rights reserved-the Hub 2021</p>
-        </footer>  
+        </header>
+        <div class="container">
+            <img src="../images/unnamed.jpeg" alt="site comming soon">
+            <div class="feedback-form">
+                <h2>CONNECT WITH <mark>US....</mark></h2>
+                <form id= "review-form" method="POST" action="./index.html">
+                    <div input="input-element">
+                        <label for="first_name">Enter First name:</label>
+                        <input type="text" placeholder="Allen" id="first_name" name="first_name"/>
+                    </div>
+                    <div input="input-element">
+                        <label for="last_name">Enter Last name:</label>
+                        <input type="text" placeholder="Nanyonjo" id="last_name" name="last_name"/>
+                    </div>
+                    <div input="input-element">
+                        <label for="Email">Enter Email address:</label>
+                        <input type="text" placeholder="example@gmail.com" id="email" name="email"/>
+                    </div>
+                    <div input="input-element">
+                        <label for="gender">Select gender:</label>
+                        <input type="radio" id="male" name="male" checked/>
+                        <label for="gender">Male</label>
+                        <input type="radio" id="male" name="male"/>
+                        <label for="gender">Female:</label>
+                        <input type="radio" id="female" name="female"/>
+                        <label for="gender">Other</label>
+                        <input type="radio" id="other" name="other"/>
+                    </div>
+                    <div input="input-element">     
+                        <label for="phone">Telphone number:</label>
+                        <input type="text" id="phone" name="phone"/>
+                    </div>
+                    <div input="input-element">     
+                        <label for="program">Select programming languange:</label>
+                        <select name="program" id="program">
+                            <option value="mysql">MYSQL</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="php">Php</option>
+                            <option value="react">React</option>
+                        </select>
+                    </div>
+                    <div input="input-element">     
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject"/>
+                    </div>
+                    <div input="input-element">     
+                        <label for="review">Message:</label>
+                        <textarea name="review" cols="25" rows="10">   
+                        </textarea>
+                    </div>
+                    <input type="submit" value="Submit"/>             
+                </form>
+            </div>
+            <div class="feed">
+                <h4>Reach us on</h4>
+            </div>
+        </div>
+    
+    </body>
+    <footer>
+        <p> &copy;All rights reserved-the Hub 2021</p>
+    </footer>
 </html>
