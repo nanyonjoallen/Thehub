@@ -7,10 +7,11 @@
         <link href="../css/index.css" rel="stylesheet" media="screen"/>
         <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One:regular" rel="stylesheet" />
+        
     </head>
     <body>
         <header>
-            <div class="header">
+            <div class="header" id="myHeader">
             <nav class="navbar-top">
                 <label alt="logo" class="logo">TheHub</label>
                 <ul class="menu">
@@ -35,6 +36,7 @@
                     <li>
                         <a href="../pages/contact.html">Contact</a>
                     </li>   
+                    <input id="srchbar" type="search" placeholder="Search">
                 </ul>
                 <label id="icon">
                     <i class="fas fa-bars"></i>
@@ -46,12 +48,50 @@
         <div class="content">
             <h4>THE FUTURE BEGINS HERE:IT ALL STARTS WITH<mark> ONE SIMPLE STEP</mark></h4>
             <P>It takes a single step and extra interest to get were you dream to be/go</P>
-
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolor, 
+                ullam repellat eligendi error expedita sed laboriosam ratione? Et adipisci, 
+                soluta ipsa deleniti eius quia! Sint dignissimos eveniet expedita sit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolor, 
+                ullam repellat eligendi error expedita sed laboriosam ratione? Et adipisci, 
+                soluta ipsa deleniti eius quia! Sint dignissimos eveniet expedita sit.</p> 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolor, 
+                ullam repellat eligendi error expedita sed laboriosam ratione? Et adipisci, 
+                soluta ipsa deleniti eius quia! Sint dignissimos eveniet expedita sit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolor, 
+                ullam repellat eligendi error expedita sed laboriosam ratione? Et adipisci, 
+                soluta ipsa deleniti eius quia! Sint dignissimos eveniet expedita sit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolor, 
+                ullam repellat eligendi error expedita sed laboriosam ratione? Et adipisci, 
+                soluta ipsa deleniti eius quia! Sint dignissimos eveniet expedita sit.</p> 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolor, 
+                ullam repellat eligendi error expedita sed laboriosam ratione? Et adipisci, 
+                soluta ipsa deleniti eius quia! Sint dignissimos eveniet expedita sit.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolor, 
+                ullam repellat eligendi error expedita sed laboriosam ratione? Et adipisci, 
+                soluta ipsa deleniti eius quia! Sint dignissimos eveniet expedita sit.</p>
         </div>
         <div class="fixed-footer">
-            <div class="container"> &copy;All rights reserved-the Hub 2021</div>
-
+            <div> &copy;Allen Nanyonjo 2021
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
         </div>
+        <!-- script for fixed scroll header -->
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
         
     </body>
 </html>
