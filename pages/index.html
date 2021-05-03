@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TheHub</title>
+        <title>My-form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../css/index.css" rel="stylesheet" media="screen"/>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One:regular" rel="stylesheet" />
     </head>
     <body>
         <header>
+            <div class="header">
             <nav class="navbar-top">
+                <label alt="logo" class="logo">my-form</label>
                 <ul class="menu">
+                    <!-- <li class="menu-item">
+                        <a href="#" id="logo" alt="logo" class="logo">TheHub</a>
+                    </li> -->
                     <li class="menu-item">
-                        <a href="#" id="logo">The Hub</a>
+                        <a href="../pages/index.html" class="active">Home</a>
                     </li>
                     <li class="menu-item">
                         <a href="../pages/about.html">About</a>
                     </li>
                     <li class="menuitem">
-                        <a href="../pages/services.html">Services</a>
+                        <a href="../pages/services.html">Services</a>                        
                     </li>
                     <li class="menuitem">
                         <a href="../pages/gallery.html">Gallery</a>
@@ -30,12 +36,74 @@
                         <a href="../pages/contact.html">Contact</a>
                     </li>   
                 </ul>
+                <label id="icon">
+                    <i class="fas fa-bars"></i>
+                </label>
             </nav>
+        </div>
         </header>
-        <div class="img-container">
-            <img src="../images/w.jpeg" alt="website under construction">
-            <h1>IT ALL STARTS WITH<mark> ONE SIMPLE STEP</mark></h1> 
-        </div>   
+
+        <div class="container">
+            <!-- <img src="../images/w.jpeg" alt="site coming soon" class="banner"> -->
+            <div class="contact-form">
+                <h2 class="form-header">CONNECT WITH <mark>US....</mark></h2>
+                <p>Please fill in this form to get in tough with us.</p>
+                <hr>
+                <form class="info-form" method="POST" action="./index.html">
+                    <div input="input-element">
+                        <label for="first_name">Enter First name:</label>
+                        <input type="text" placeholder="Allen" id="first_name" name="first_name"/>
+                    </div>
+                    <div input="input-element">
+                        <label for="last_name">Enter Last name:</label>
+                        <input type="text" placeholder="Nanyonjo" id="last_name" name="last_name"/>
+                    </div>
+                    <div input="input-element">
+                         <label for="Email">Enter Email address:</label>
+                        <input type="text" placeholder="example@gmail.com" id="email" name="email"/>
+                    </div>
+                    <div input="input-element">
+                        <label for="gender">Select gender:</label> 
+                        <label for="gender">Male:</label>
+                        <input type="radio" id="male" name="male" checked/>
+                        <label for="gender">Female:</label>
+                        <input type="radio" id="female" name="female"/>
+                        <label for="gender">Other:</label>
+                        <input type="radio" id="other" name="other"/>
+                    </div>
+                    <div input="input-element">     
+                        <label for="phone">Telephone number:</label> 
+                        <input type="text" placeholder="0778......"id="phone" name="phone"/>
+                    </div>
+                    <div input="input-element">     
+                        <label for="program">Select programming language:</label> 
+                        <select name="program" id="program">
+                            <option value="mysql">MYSQL</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="php">Php</option>
+                            <option value="react">React</option>
+                        </select>
+                    </div>
+                    <div input="input-element">     
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject"/>
+                    </div>
+                    <div input="input-element">     
+                        <label for="review">Message:</label> 
+                        <textarea name="review" cols="25" rows="10">   
+                        </textarea>
+                    </div>
+                    <input type="submit" value="Submit"/>             
+                </form>
+            </div>
+         </div>
+            <div class="feed">
+                <h4>Reach us on</h4>
+            </div>
+        </div>
+    
         
     </body>
 </html>

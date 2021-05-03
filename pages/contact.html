@@ -7,14 +7,13 @@
         <link href="../css/index.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-
-        </header>
         <div class="container">
-            <img src="../images/unnamed.jpeg" alt="site comming soon">
-            <div class="feedback-form">
-                <h2>CONNECT WITH <mark>US....</mark></h2>
-                <form id= "review-form" method="POST" action="./index.html">
+            <!-- <img src="../images/w.jpeg" alt="site coming soon" class="banner"> -->
+            <div class="contact-form">
+                <h2 class="form-header">CONNECT WITH <mark>US....</mark></h2>
+                <p>Please fill in this form to get in tough with us.</p>
+                <hr>
+                <form class="info-form" method="POST" action="./index.html">
                     <div input="input-element">
                         <label for="first_name">Enter First name:</label>
                         <input type="text" placeholder="Allen" id="first_name" name="first_name"/>
@@ -24,25 +23,24 @@
                         <input type="text" placeholder="Nanyonjo" id="last_name" name="last_name"/>
                     </div>
                     <div input="input-element">
-                        <label for="Email">Enter Email address:</label>
+                         <label for="Email">Enter Email address:</label>
                         <input type="text" placeholder="example@gmail.com" id="email" name="email"/>
                     </div>
                     <div input="input-element">
-                        <label for="gender">Select gender:</label>
+                        <label for="gender">Select gender:</label> 
+                        <label for="gender">Male:</label>
                         <input type="radio" id="male" name="male" checked/>
-                        <label for="gender">Male</label>
-                        <input type="radio" id="male" name="male"/>
                         <label for="gender">Female:</label>
                         <input type="radio" id="female" name="female"/>
-                        <label for="gender">Other</label>
+                        <label for="gender">Other:</label>
                         <input type="radio" id="other" name="other"/>
                     </div>
                     <div input="input-element">     
-                        <label for="phone">Telphone number:</label>
-                        <input type="text" id="phone" name="phone"/>
+                        <label for="phone">Telephone number:</label> 
+                        <input type="text" placeholder="0778......"id="phone" name="phone"/>
                     </div>
                     <div input="input-element">     
-                        <label for="program">Select programming languange:</label>
+                        <label for="program">Select programming language:</label> 
                         <select name="program" id="program">
                             <option value="mysql">MYSQL</option>
                             <option value="python">Python</option>
@@ -57,20 +55,19 @@
                         <input type="text" id="subject" name="subject"/>
                     </div>
                     <div input="input-element">     
-                        <label for="review">Message:</label>
+                        <label for="review">Message:</label> 
                         <textarea name="review" cols="25" rows="10">   
                         </textarea>
                     </div>
                     <input type="submit" value="Submit"/>             
                 </form>
             </div>
+         </div>
             <div class="feed">
                 <h4>Reach us on</h4>
             </div>
         </div>
     
     </body>
-    <footer>
-        <p> &copy;All rights reserved-the Hub 2021</p>
-    </footer>
+
 </html>
