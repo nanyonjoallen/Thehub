@@ -4,8 +4,7 @@ var temp=35;
 if (temp==33) {
     console.log("your temperature is normal");
    
-//  block of code to be executed if condition1 is true
-} 
+//  check the conditions if true or false
 else if (temp>=37) {
 console.log("you have covid-19");
 
